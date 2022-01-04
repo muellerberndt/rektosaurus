@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/b-mueller/rektosaurus/issues"
   },
-  "homepage": "https://github.com/b-mueller/rektosaurus#readme"
+  "homepage": "https://github.com/b-mueller/rektosaurus#readme",
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.3",
+    "@openzeppelin/contracts": "^4.4.1",
+    "@openzeppelin/test-helpers": "^0.5.15",
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "hardhat": "^2.8.0"
+  }
 }

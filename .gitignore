@@ -1,6 +1,10 @@
 node_modules
 .idea
+.env
 
 #Hardhat files
 cache
 artifacts
+
+#MacOS
+.DS_Store
