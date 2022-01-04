@@ -3,9 +3,17 @@
  */
 
 require("@nomiclabs/hardhat-ethers");
+require("@nomiclabs/hardhat-etherscan");
 require('dotenv').config()
 
-const { ALCHEMY_MUMBAI_API_URL, ALCHEMY_POLYGON_API_URL, PRIVATE_KEY } = process.env;
+const { 
+  ALCHEMY_MUMBAI_API_URL,
+  ALCHEMY_POLYGON_API_URL,
+  ETHERSCAN_API_KEY,
+  PRIVATE_KEY 
+} = process.env;
+
+console.log(ETHERSCAN_API_KEY);
 
 module.exports = {
   solidity: "0.8.11",
@@ -24,5 +32,9 @@ module.exports = {
     hardhat: {
       // See its defaults
     }
-  }
+  }, 
+  etherscan:
+    {
+      apiKey: `${ETHERSCAN_API_KEY}`
+    }
 }

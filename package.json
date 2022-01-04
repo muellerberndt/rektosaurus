@@ -24,5 +24,8 @@
     "chai": "^4.3.4",
     "dotenv": "^10.0.0",
     "hardhat": "^2.8.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-etherscan": "^2.1.8"
   }
 }
