@@ -1,3 +1,3 @@
 # Rektosaurus
 
-A test suite to check for client-side script injection via NFTs.
+A test suite to check for client-side script injection via NFTs. Payloads are hosted on [rex.rektosaurus.io](https://rex.rektosaurus.io/).
