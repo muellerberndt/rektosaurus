@@ -1,0 +1,20 @@
+{
+  "name": "rektosaurus",
+  "version": "0.0.1",
+  "description": "A test suite to check for client-side script injection via NFTs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b-mueller/rektosaurus.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b-mueller/rektosaurus/issues"
+  },
+  "homepage": "https://github.com/b-mueller/rektosaurus#readme"
+}
