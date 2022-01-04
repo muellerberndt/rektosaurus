@@ -1,2 +1,3 @@
-# rektosaurus
-Test for client-side script injection via NFTs
+# Rektosaurus
+
+A test suite to check for client-side script injection via NFTs.
