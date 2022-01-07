@@ -17,7 +17,7 @@ contract Rektosaurus is ERC721Enumerable, Ownable {
     constructor()
         ERC721("Rektosaurus Rex", "REKT")
     {
-        mint(1, string(abi.encodePacked(BASE_URL, "1.json")));
+        mint(1, msg.sender, string(abi.encodePacked(BASE_URL, "1.json")));
     }
 
     /**
@@ -25,9 +25,10 @@ contract Rektosaurus is ERC721Enumerable, Ownable {
      * @param tokenId token ID
      * @param payload payload string
      */
-    function mint(uint256 tokenId, string memory payload) public onlyOwner {
-        _mint(owner(), tokenId);
+    function mint(uint256 tokenId, address to, string memory payload) public onlyOwner {
+        _mint(to, tokenId);
 
+        // Payload is only stored on-chain for IDs below MAX_BUILTIN_ID. The remaining IDs are fetched from server.
         if (tokenId <= MAX_BUILTIN_ID) {
             payloads[tokenId] = payload;
         }

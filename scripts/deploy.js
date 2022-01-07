@@ -17,8 +17,6 @@ async function main() {
     await deployer.getAddress()
   );
 
-  console.log("Account balance:", (await deployer.getBalance()).toString());
-
   const Rektosaurus = await ethers.getContractFactory("Rektosaurus");
   const rektosaurus = await Rektosaurus.deploy();
   await rektosaurus.deployed();
@@ -27,10 +25,9 @@ async function main() {
 
   // Add some on-chain payloads
 
-  await rektosaurus.mint(2, '"/><script>alert(1)</script>');
-  await rektosaurus.mint(3, 'javascript:alert(1);');
-  await rektosaurus.mint(4, "data:text/html;base64,PGh0bWw+PHNjcmlwdD5hbGVydCgxKTs8L3NjcmlwdD48L2h0bWw+Cg==");
-
+  await rektosaurus.mint(2, deployer.address, '"/><script>alert(1)</script>');
+  await rektosaurus.mint(3, deployer.address, 'javascript:alert(1);');
+  await rektosaurus.mint(4, deployer.address, "data:text/html;base64,PGh0bWw+PHNjcmlwdD5hbGVydCgxKTs8L3NjcmlwdD48L2h0bWw+Cg==");
 }
 
 main()

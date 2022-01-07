@@ -13,8 +13,6 @@ const {
   PRIVATE_KEY 
 } = process.env;
 
-console.log(ETHERSCAN_API_KEY);
-
 module.exports = {
   solidity: "0.8.11",
   networks: {

@@ -1,0 +1,6 @@
+{
+  "name": "Rektosaurus #1041 [Description HTML href]",
+  "image": "https://rex.rektosaurus.io/rektosaurus.png",
+  "description": "<a href=\"javascript:alert(1);\">clickme</a>"
+
+}

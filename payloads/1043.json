@@ -1,0 +1,5 @@
+{
+  "name": "Rektosaurus #1043 [description markdown direct JS link]",
+  "image": "https://rex.rektosaurus.io/rektosaurus.png", 
+  "description": "<javascript:alert(1)>"
+}
