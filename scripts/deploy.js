@@ -1,3 +1,13 @@
+// Payloads to be stored on-chain.
+// In principle, arbitrary metadata can be encoded into data:application/json URLs,
+// but for testing purposes it's more practical to store most metadata off-chain
+
+const BUILTIN_PAYLOADS = [
+  '"/><script>alert(1)</script>',
+  'javascript:alert(1);',
+  'data:text/html;base64,PGh0bWw+PHNjcmlwdD5hbGVydCgxKTs8L3NjcmlwdD48L2h0bWw+Cg=='
+]
+
 // This is a script for deploying your contracts. You can adapt it to deploy
 // yours, or create new ones.
 async function main() {
@@ -25,9 +35,10 @@ async function main() {
 
   // Add some on-chain payloads
 
-  await rektosaurus.mint(2, deployer.address, '"/><script>alert(1)</script>');
-  await rektosaurus.mint(3, deployer.address, 'javascript:alert(1);');
-  await rektosaurus.mint(4, deployer.address, "data:text/html;base64,PGh0bWw+PHNjcmlwdD5hbGVydCgxKTs8L3NjcmlwdD48L2h0bWw+Cg==");
+  for (var i = 1; i <= BUILTIN_PAYLOADS.length; i++) {
+    await rektosaurus.mint(i, deployer.address, BUILTIN_PAYLOADS[i]);
+  }
+
 }
 
 main()
