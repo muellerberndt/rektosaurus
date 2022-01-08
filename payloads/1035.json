@@ -1,5 +1,5 @@
 {
-  "name": "Rektosaurus #1035 [description script tag]", 
+  "name": "Rektosaurus #1035 [description script]", 
   "image": "https://rex.rektosaurus.io/rektosaurus.png",
   "description": "<script>alert(1)</script>"
 }
