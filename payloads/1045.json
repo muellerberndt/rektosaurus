@@ -1,5 +1,11 @@
 {
-    "animation_url": "https://rex.rektosaurus.io/script.html",
-    "name": "Rektosaurus #1045 [animation_url external script debug to console]",
-    "description": "-"
+    "image": "https://rex.rektosaurus.io/rektosaurus.png", 
+    "name": "Rektosaurus #1045 [Attribute name escape HTML]",
+    "description": "-",
+    "attributes": [
+        {
+          "trait_type": "\"><script>alert(1)</script>", 
+          "value": "Starfish"
+        }
+    ]
 }

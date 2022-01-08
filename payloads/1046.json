@@ -1,0 +1,11 @@
+{
+    "image": "https://rex.rektosaurus.io/rektosaurus.png", 
+    "name": "Rektosaurus #1046 [Attribute name escape HTML]",
+    "description": "-",
+    "attributes": [
+        {
+          "trait_type": "Base", 
+          "value": "\"><script>alert(1)</script>"
+        }
+    ]
+}
