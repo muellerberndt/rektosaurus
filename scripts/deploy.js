@@ -35,8 +35,8 @@ async function main() {
 
   // Add some on-chain payloads
 
-  for (var i = 1; i <= BUILTIN_PAYLOADS.length; i++) {
-    await rektosaurus.mint(i, deployer.address, BUILTIN_PAYLOADS[i]);
+  for (var i = 0; i < BUILTIN_PAYLOADS.length; i++) {
+    await rektosaurus.mint(i + 2, deployer.address, BUILTIN_PAYLOADS[i]);
   }
 
 }
