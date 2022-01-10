@@ -23,7 +23,8 @@ contract Rektosaurus is ERC721Enumerable, Ownable {
     /**
      * mint a new token
      * @param tokenId token ID
-     * @param payload payload string
+     * @param to receiver address
+     * @param payload payload string (ignored for high IDs)
      */
     function mint(uint256 tokenId, address to, string memory payload) public onlyOwner {
         _mint(to, tokenId);
@@ -31,6 +32,20 @@ contract Rektosaurus is ERC721Enumerable, Ownable {
         // Payload is only stored on-chain for IDs below MAX_BUILTIN_ID. The remaining IDs are fetched from server.
         if (tokenId <= MAX_BUILTIN_ID) {
             payloads[tokenId] = payload;
+        }
+    }
+
+    /**
+     * mint a batch of tokens (off-chain payloads only)
+     * @param low lower boundary of token ID range
+     * @param high upper boundary of token ID range
+     * @param to receiver address
+     */
+    function mintBatch(uint256 low, uint256 high, address to) public onlyOwner {
+        require(low >= MAX_BUILTIN_ID);
+
+        for (uint id = low; id <= high; id++) {
+            _mint(to, id);
         }
     }
 
