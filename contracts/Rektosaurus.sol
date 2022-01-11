@@ -42,7 +42,7 @@ contract Rektosaurus is ERC721Enumerable, Ownable {
      * @param to receiver address
      */
     function mintBatch(uint256 low, uint256 high, address to) public onlyOwner {
-        require(low >= MAX_BUILTIN_ID);
+        require(low > MAX_BUILTIN_ID);
 
         for (uint id = low; id <= high; id++) {
             _mint(to, id);
