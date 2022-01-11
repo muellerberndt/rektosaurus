@@ -1,6 +1,6 @@
 # Rektosaurus
 
-A test suite to check for client-side script injection via NFTs.
+A test suite to check for client-side script injection on websites that display NFTs.
 
 ## Overview
 
