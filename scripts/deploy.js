@@ -5,6 +5,7 @@
 const BUILTIN_PAYLOADS = [
   '"/><script>alert(1)</script>',
   'javascript:alert(1);',
+  'x" onerror="alert(1)" y="',
   'data:text/html;base64,PGh0bWw+PHNjcmlwdD5hbGVydCgxKTs8L3NjcmlwdD48L2h0bWw+Cg=='
 ]
 
