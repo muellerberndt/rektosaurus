@@ -24,6 +24,8 @@ $ npx hardhat run scripts/deploy.js
 
 Note that you'll have to mint or batchmint the NFTs for them to show up on marketplaces.
 
+Replace `INSERT_YOUR_CALLBACK` in payloads directory with your preferred callback URL such as interact.sh or Burp Collaborator.
+
 ### Live deployment
 
 An instance of the smart contract is live on [Mumbai](https://mumbai.polygonscan.com/address/0x0adF52ecC0F5d5d452a5F942be293a858F625849#code). [Payloads](payloads) are hosted on [rex.rektosaurus.io](https://rex.rektosaurus.io/).
@@ -31,5 +33,3 @@ An instance of the smart contract is live on [Mumbai](https://mumbai.polygonscan
 ## Contributing
 
 Please submit your payload ideas via pull request and I'll add them to the webserver.
-
-
