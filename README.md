@@ -28,7 +28,9 @@ Replace `INSERT_YOUR_CALLBACK` in payloads directory with your preferred callbac
 
 ### Live deployment
 
-An instance of the smart contract is live on [Mumbai](https://mumbai.polygonscan.com/address/0x0adF52ecC0F5d5d452a5F942be293a858F625849#code). [Payloads](payloads) are hosted on [rex.rektosaurus.io](https://rex.rektosaurus.io/).
+An instance of the smart contract is [live on Mumbai](https://mumbai.polygonscan.com/address/0xedb72a54d4d0b6b725a47bf2efefaa1cb3418330#code).
+
+[Payloads](payloads) are hosted on [rex.rektosaurus.io](https://rex.rektosaurus.io/).
 
 ## Contributing
 
