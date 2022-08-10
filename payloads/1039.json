@@ -1,6 +1,6 @@
 {
   "name": "Rektosaurus #1039 [Description markdown JavaScript link]",
-  "description": "[clickme](javascript:alert\(1\)",
+  "description": "[clickme](javascript:console.log(1039))",
   "image": "https://rex.rektosaurus.io/rektosaurus.png",
   "attributes": []
 }

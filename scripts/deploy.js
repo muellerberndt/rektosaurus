@@ -3,10 +3,10 @@
 // but for testing purposes it's more practical to store most metadata off-chain
 
 const BUILTIN_PAYLOADS = [
-  '"/><script>alert(1)</script>',
-  'javascript:alert(1);',
-  'x" onerror="alert(1)" y="',
-  'data:text/html;base64,PGh0bWw+PHNjcmlwdD5hbGVydCgxKTs8L3NjcmlwdD48L2h0bWw+Cg=='
+  '"/><script>console.log(1337);</script>',
+  'javascript:console.log(1338);',
+  'x" onerror="javascript:console.log(1339);" y="',
+  'data:text/html;base64,PGh0bWw+PHNjcmlwdD5jb25zb2xlLmxvZygxMzQwKTs8L3NjcmlwdD48L2h0bWw+'
 ]
 
 // This is a script for deploying your contracts. You can adapt it to deploy

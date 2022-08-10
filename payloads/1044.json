@@ -1,5 +1,5 @@
 {
     "name": "Rektosaurus #1044 [description blacklist-based removal bypass]",
     "image": "https://rex.rektosaurus.io/rektosaurus.png", 
-    "description": "<i<script>mg src=x onerror=alert(1)>"
+    "description": "<i<script>mg src=x onerror=console.log(1044);>"
 }

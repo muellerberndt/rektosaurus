@@ -1,5 +1,5 @@
 {
-    "image": "\"><script>alert(1);</script>",
+    "image": "\">console.log(1026);</script>",
     "name": "Rektosaurus #1026 [image escape html tag]",
     "description": "-"
 }

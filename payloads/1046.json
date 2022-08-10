@@ -5,7 +5,7 @@
     "attributes": [
         {
           "trait_type": "Base", 
-          "value": "\"><script>alert(1)</script>"
+          "value": "\"><script>console.log(1046);</script>"
         }
     ]
 }

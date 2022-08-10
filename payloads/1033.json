@@ -1,6 +1,6 @@
 {
   "name": "Rektosaurus #1033 [external_url javascript URL]",
   "description": "-", 
-  "external_url": "javascript:alert(1)",
+  "external_url": "javascript:console.log(1033)",
   "image": "https://rex.rektosaurus.io/rektosaurus.png"
 }

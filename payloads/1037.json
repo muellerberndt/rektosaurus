@@ -1,5 +1,5 @@
 {
   "name": "Rektosaurus #1037 [youtube_url escape quote]", 
   "description": "-", 
-  "youtube_url": "\"><script>alert(1);</script>"
+  "youtube_url": "\"><script>console.log(1037);</script>"
 }

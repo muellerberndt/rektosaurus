@@ -4,7 +4,7 @@
     "description": "-",
     "attributes": [
         {
-          "trait_type": "\"><script>alert(1)</script>", 
+          "trait_type": "\"><script>console.log(1045)</script>", 
           "value": "Starfish"
         }
     ]

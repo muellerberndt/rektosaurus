@@ -1,6 +1,6 @@
 {
     "image": "https://rex.rektosaurus.io/rektosaurus.png", 
     "name": "Rektosaurus #1047 [background_color escape HTML]",
-    "background_color": "\"><script>alert(1(</script>",
+    "background_color": "\"><script>console.log(1047);</script>",
     "description": "-"
 }

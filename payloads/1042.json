@@ -1,5 +1,5 @@
 {
   "name": "Rektosaurus #1042 [Description img tag w/ javascript onerror handler]",
   "image": "https://rex.rektosaurus.io/rektosaurus.png", 
-  "description": "<img src=x onerror='javascript:alert(1);'/>"
+  "description": "<img src=x onerror='console.log(1042);'/>"
 }
